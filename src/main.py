@@ -1,16 +1,15 @@
 import os,platform
 from decouple import config
+import json
 
-from app import APP
+from App import APP
 
 from Controllers.Tickets import ticketController
 from Controllers.Users import userController
+from Controllers.Reports import Reports
 
-app = APP()
+app = APP().start()
 
-# USERS = userController(APP_TOKEN,SESSION.session_token)
+report = Reports(app)
 
-TICKET = ticketController(app)
-tickets = TICKET.getTickets()
 
-print(tickets)

@@ -17,9 +17,7 @@ class sessionController:
             self.session_token = token
             return token
         else:
-            print(response.status_code)
-            print(response.text)
-            exit()
+            return False
 
     
     def killSession(self):

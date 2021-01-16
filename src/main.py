@@ -10,6 +10,6 @@ from Controllers.Reports import Reports
 
 app = APP().start()
 
-report = Reports(app)
+# report = Reports(app)
 
 

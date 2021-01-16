@@ -11,10 +11,19 @@ class APP:
     def __init__(self):
         self.app_token = ""
         self.session_token = ""
+        self.public_address = ""
 
     def start(self):
         self.app_token = config("LINK_VIVO_TOKEN")
         self.session_token = self.getToken()
+        self.public_address = self.getPubAdd()
+        print("""====================================
+  START APP:
+------------------------------------
+public_addr: {}
+app_token: {}
+session_token: {}
+====================================""".format(self.public_address,self.app_token,self.session_token))
         return self
 
     def getPubAdd(self):

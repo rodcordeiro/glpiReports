@@ -44,8 +44,15 @@ class userController:
             "criteria[0][itemtype]":"User",
             "criteria[0][field]":"13",
             "criteria[0][searchtype]":"contains",
-            "criteria[0][value]":"Área técnica"
+            "criteria[0][value]":"Área técnica",
+            "forcedisplay[0]":"1",
+            "forcedisplay[1]":"2",
+            "forcedisplay[2]":"9",
+            "forcedisplay[3]":"34"
             }
         payload = ""
         response = requests.request("GET", url, data=payload, params=querystring)
-        return response.json()
+        data = {}
+        for tech in response.json().get('data'):
+            data[tech['2']]=f"{tech['9']} {tech['34']}"
+        return data

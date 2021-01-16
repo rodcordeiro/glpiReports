@@ -88,7 +88,9 @@ class ticketController:
             "forcedisplay[6]": "4",
             "forcedisplay[7]": "5",
             "forcedisplay[8]": "7",
-            "forcedisplay[9]": "45"
+            "forcedisplay[9]": "45",
+            "forcedisplay[10]": "36",
+            "forcedisplay[11]": "9"
             }
         payload = ""
         response = requests.request("GET", url, data=payload, params=querystring)
@@ -96,7 +98,13 @@ class ticketController:
 
 def getMonth():
     date = datetime.date.today()
-    init = "{}-{}-{} 00:00:00".format(date.month -1, "01",date.year)
+    if date.month == 1:
+        monthInit = 12 
+        yearInit = date.year - 1
+    else:
+        monthInit = date.month - 1
+        yearInit = date.year
+    init = "{}-{}-{} 00:00:00".format(monthInit, "01",yearInit)
     end = "{}-{}-{} 00:00:00".format(date.month, "01",date.year)
     date = {
         "init":datetime.datetime.strptime(init, "%m-%d-%Y %H:%M:%S").date(),

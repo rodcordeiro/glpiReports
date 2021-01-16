@@ -13,8 +13,9 @@ class APP:
         self.session_token = ""
         self.public_address = ""
 
+        self.session_token = ""
     def start(self):
-        self.app_token = config("LINK_VIVO_TOKEN")
+        self.app_token = config("LOCAL_TOKEN")
         self.session_token = self.getToken()
         self.public_address = self.getPubAdd()
         print("""====================================

@@ -27,11 +27,3 @@ class APP:
             self.app_token == config("LINK_VIVO_TOKEN") if self.app_token == config("LINK_TIM_TOKEN") else config("LINK_TIM_TOKEN")
             self.getToken()
         return token
-        # if link == config("LINK_TIM_IP"):
-        #     return config("LINK_TIM_TOKEN")
-        # elif link == config("LINK_VIVO_IP"):
-        #     return config("LINK_VIVO_TOKEN")
-        # else:
-        #     print("Invalid external IP Address")
-        #     exit()
-    

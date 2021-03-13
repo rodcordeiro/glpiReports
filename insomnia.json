@@ -1,214 +1,14 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2021-03-13T20:05:59.500Z",
+    "__export_date": "2021-03-13T20:14:52.012Z",
     "__export_source": "insomnia.desktop.app:v2021.1.1",
     "resources": [
         {
-            "_id": "req_64d851b48dda4306b92b226ec9b7c24d",
-            "parentId": "fld_a975f608e37c4ef89c2b80020143a353",
-            "modified": 1614627134501,
-            "created": 1614626325181,
-            "url": "{{ _.baseUrl }}/User/",
-            "name": "Get current user details",
-            "description": "",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}",
-                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1614626325181,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "fld_a975f608e37c4ef89c2b80020143a353",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1614644649808,
-            "created": 1614626336280,
-            "name": "User",
-            "description": "",
-            "environment": {},
-            "environmentPropertyOrder": null,
-            "metaSortKey": -1614626336280,
-            "_type": "request_group"
-        },
-        {
-            "_id": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "parentId": null,
-            "modified": 1605194268440,
-            "created": 1605194268440,
-            "name": "GLPI",
-            "description": "",
-            "scope": "collection",
-            "_type": "workspace"
-        },
-        {
-            "_id": "req_f46f1d4d239246f6b600d7e25c296b82",
-            "parentId": "fld_a975f608e37c4ef89c2b80020143a353",
-            "modified": 1614631723108,
-            "created": 1614631716291,
-            "url": "{{ _.baseUrl }}/getActiveProfile",
-            "name": "Get active profile",
-            "description": "",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}",
-                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1614626325178.5,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "req_72cc19440ee244a6bb6d12545ff2c7f2",
-            "parentId": "fld_a975f608e37c4ef89c2b80020143a353",
-            "modified": 1615579509216,
-            "created": 1614631754077,
-            "url": "{{ _.baseUrl }}/getMyProfiles",
-            "name": "Get all profiles",
-            "description": "",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}",
-                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1614626325177.25,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "req_49d5dfadf30445c487ce533daeb58fa6",
-            "parentId": "fld_a975f608e37c4ef89c2b80020143a353",
-            "modified": 1614644640424,
-            "created": 1614626325186,
-            "url": "{{ _.baseUrl }}/getActiveProfile",
-            "name": "Get current user Id",
-            "description": "",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_6973e9266abd41ce8d8013f53f5a7d1e"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}",
-                    "id": "pair_1fcbb4f081bc46dda504cbf5d4f6a0ed"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1614626325176.9375,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "req_8960ddf1c8e84ef9b59a209865785ca9",
-            "parentId": "fld_a975f608e37c4ef89c2b80020143a353",
-            "modified": 1614631811278,
-            "created": 1614631773838,
-            "url": "{{ _.baseUrl }}/changeActiveProfile",
-            "name": "change active profile",
-            "description": "",
-            "method": "POST",
-            "body": {
-                "mimeType": "application/json",
-                "text": "{\n\t\"profiles_id\": 4\n}"
-            },
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}",
-                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
-                },
-                {
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "id": "pair_c1f8c446b1a74d768e90d1bc1abacd7c"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1614626325176.625,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "req_557cf9708aa347cb96471e77b75d25ad",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1614785011304,
-            "created": 1614626325190,
+            "_id": "req_131c4b1d88fb4d9d97362da2a36d4e2c",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157127,
+            "created": 1615666157127,
             "url": "{{ _.baseUrl }}/Ticket",
             "name": "Get all tickets",
             "description": "## `GET` /Ticket\n Returns all tickets\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -280,22 +80,32 @@
             "_type": "request"
         },
         {
-            "_id": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1610636360029,
-            "created": 1610636360029,
+            "_id": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666157107,
+            "created": 1615666157107,
             "name": "Tickets",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1610636360029,
+            "metaSortKey": -1000000000,
             "_type": "request_group"
         },
         {
-            "_id": "req_fe8d859c30bd424997211216a1873f21",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1615146401366,
-            "created": 1614626325176,
+            "_id": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "parentId": null,
+            "modified": 1615666092211,
+            "created": 1615666092211,
+            "name": "GLPI",
+            "description": "",
+            "scope": "designer",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_89b6536bb6b04a2f95cf5d9cf504cfbf",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157124,
+            "created": 1615666157124,
             "url": "{{ _.baseUrl }}/Ticket/5421",
             "name": "Get ticket with ID 1",
             "description": "## `GET` /Ticket/:TicketID\n Returns the ticket with the specified Id.\n\n#### Route Params\n`id` *The ticket ID*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -331,10 +141,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_22f039a7550a4ce4b04496eca2d16c6d",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1615146390628,
-            "created": 1614626325171,
+            "_id": "req_3516eb4325f7418dacfa42f78c69ffaf",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157120,
+            "created": 1615666157120,
             "url": "{{ _.baseUrl }}/Ticket/1/TicketFollowup",
             "name": "Get ticket Followup",
             "description": "## `GET` /Ticket/:TicketID/TicketFollowup\n Returns the followup of the Ticket specified\n\n#### Route Params\n`id` *The ticket ID*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/TicketFollowup'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -370,10 +180,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_6ae14017b0df46fc91e319876996187a",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1614785555671,
-            "created": 1614626325167,
+            "_id": "req_9ca5bd8add87467589edd5c31a007b0c",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157116,
+            "created": 1615666157116,
             "url": "{{ _.baseUrl }}/Ticket/",
             "name": "Create ticket",
             "description": "## `POST` /Ticket\n Create a ticket. You must pass a `input` param with the json with the params, follow some param examples.\n\n#### Params\n`name`: *Ticket title*\n\n`content` *Ticket description*\n\n`urgency` *Ticket urgency* \n\n`impact` *Ticket impact*\n\n`type` *Ticket type (requisition or incident)*\n\n`itilcategories_id` *Ticket categories* \n\t\t\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl --request POST \\\n  --url http://glpi.beltis.com.br/glpi/apirest.php/Ticket/ \\\n  --data '{\n\t\"input\": {\n\t\t\"name\": \"TESTE de ticket\",\n\t\t\"content\": \"Teste de criação de ticket via API\",\n\t\t\"urgency\": 5,\n\t\t\"impact\": 3,\n\t\t\"type\": 2,\n\t\t\"itilcategories_id\": 22,\n\t\t\"requesttype\": 7\n\t}\n}'\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/TicketFollowup' \n```\n\n#### Response\n```json\n{\n  \"id\": 5421,\n  \"message\": \"Item adicionado com sucesso: TESTE de ticket\"\n}\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -418,10 +228,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_e6ab2549bcc44a7da909b9ab5d113db7",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1615146375765,
-            "created": 1614626325163,
+            "_id": "req_b72adea6b48e44bdbc8d4b1d9c100644",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157111,
+            "created": 1615666157111,
             "url": "{{ _.baseUrl }}/Ticket/5410/TicketFollowup",
             "name": "Add FollowUp to Ticket",
             "description": "## `POST` /Ticket/:ticketID/TicketFollowup\n Add a followup to the ticket. You must pass a `input` param with the json with the params.\n\n#### Route Params\n`id` *The ticket ID*\n\n#### Params\n`tickets_id` *Id of the ticket to add the followup*\n\n`content` *Content of the followup*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl --request POST \\\n  --url http://glpi.beltis.com.br/glpi/apirest.php/Ticket/10/TicketFollowup \\\n  --data '{\n\t\"input\": {\n\t\t\"ticket\": 10,\n\t\t\"content\": \"Ticket followup test\"\n\t}\n}'\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/TicketFollowup' \n```\n\n#### Response\n```json\n{\n  \"id\": 5421,\n  \"message\": \"\"\n}\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -460,10 +270,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_d68d3b0e683d409b9bff3432cacf4818",
-            "parentId": "fld_e293b9e448684aac93aa41a0b6d3dba4",
-            "modified": 1615146356070,
-            "created": 1614631417350,
+            "_id": "req_4f10f8c85b474caaa5c5e702e60bf28f",
+            "parentId": "fld_e1e5db65422241478e6ba68c7e4e8dd5",
+            "modified": 1615666157129,
+            "created": 1615666157129,
             "url": "{{ _.baseUrl }}/Ticket/5421/Change_Ticket/",
             "name": "Update Ticket",
             "description": "## `POST` /Ticket/:ticketID/Change_Ticket\n Update ticket. You must pass a `input` param with the json with the params.\n\n#### Route Params\n`id` *The ticket ID*\n\n#### Params\n`tickets_id` *Id of the ticket to add the followup*\n\n`param` *The param to update. You must use same params used to create the ticket*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl --request POST \\\n  --url http://glpi.beltis.com.br/glpi/apirest.php/Ticket/10/Chante_Ticket \\\n  --data '{\n\t\"input\": {\n\t\t\"ticket\": 10,\n\t\t\"content\": \"Ticket followup test\"\n\t}\n}'\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/Chante_Ticket' \n```\n\n#### Response\n```json\n{\n  \"id\": 5421,\n  \"message\": \"\"\n}\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -508,10 +318,278 @@
             "_type": "request"
         },
         {
-            "_id": "req_ff4ec48047934bcab76a976c281e815c",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147023507,
-            "created": 1615147023508,
+            "_id": "req_7161c57a9a524cfd816bac3d2edc9908",
+            "parentId": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "modified": 1615666148736,
+            "created": 1615666148736,
+            "url": "{{ _.baseUrl }}/User/",
+            "name": "Get current user details",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}",
+                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1614626325181,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666148732,
+            "created": 1615666148732,
+            "name": "User",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1000000000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_bf30385c80b74aa68319ee99989eec3c",
+            "parentId": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "modified": 1615666148746,
+            "created": 1615666148746,
+            "url": "{{ _.baseUrl }}/getActiveProfile",
+            "name": "Get active profile",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}",
+                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1614626325178.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a1c4056331754c2a8e0b9c59f78fab12",
+            "parentId": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "modified": 1615666148750,
+            "created": 1615666148750,
+            "url": "{{ _.baseUrl }}/getMyProfiles",
+            "name": "Get all profiles",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}",
+                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1614626325177.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b8f29631642c45f38a522e654526394d",
+            "parentId": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "modified": 1615666148742,
+            "created": 1615666148742,
+            "url": "{{ _.baseUrl }}/getActiveProfile",
+            "name": "Get current user Id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_6973e9266abd41ce8d8013f53f5a7d1e"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}",
+                    "id": "pair_1fcbb4f081bc46dda504cbf5d4f6a0ed"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1614626325176.9375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cda3fbeeadeb492e88aec86a691cc870",
+            "parentId": "fld_949395f1e3db48f586bc86860dc85cfc",
+            "modified": 1615666148754,
+            "created": 1615666148754,
+            "url": "{{ _.baseUrl }}/changeActiveProfile",
+            "name": "change active profile",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"profiles_id\": 4\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_5d4c6664fd7743ada9c76c214f27ced7"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}",
+                    "id": "pair_0fe28c2416dc459f85fc8708a5cb4566"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_c1f8c446b1a74d768e90d1bc1abacd7c"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1614626325176.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b8cfdc594bdf4e618d58ece32ca78abe",
+            "parentId": "fld_6227dc75f31a4a0691c1f89b36eb98f2",
+            "modified": 1615666167926,
+            "created": 1615666167926,
+            "url": "{{ _.baseUrl }}/initSession",
+            "name": "initSession",
+            "description": "## `GET` /initSession\n Creates a session, providing a session token to use the other endpoints\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\nYou must authenticate to get a session token. You can pass a user and password parameter, or a authorization with two methods:\n\n`login` *The username to creates the session*\n\n`password` *The user password to creates the session*\n\n##### OR\n\n`Authorization: Basic base64({login}:{password})`\n\n##### OR\n\n`Authorization: user_token USER_TOKEN` \n``` sh\n#the user token is recoverable at User > Preferences > api token\n```\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Authorization: user_token q56hqkniwot8wntb3z1qarka5atf365taaa2uyjrn\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/initSession'\n```\n\n### __Response__\n The response is a JSON containing the session token.\n ```json\n{\n  \"session_token\":\"TOKEN\"\n}\n```\n\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}",
+                    "id": "pair_8e2fcd59d50644b3ae0e1a293744ee14"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "{{ _.authToken }}",
+                    "id": "pair_9638435883464344a4b2590b0186fb6f"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1605194362331,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": false,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6227dc75f31a4a0691c1f89b36eb98f2",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666167922,
+            "created": 1615666167922,
+            "name": "Session",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1000000000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_2bcbb954817d430fb2670b0c28b5fff0",
+            "parentId": "fld_6227dc75f31a4a0691c1f89b36eb98f2",
+            "modified": 1615666167930,
+            "created": 1615666167930,
+            "url": "{{ baseUrl }}/killSession",
+            "name": "killSession",
+            "description": "## `GET` /killSession\n Destroy the session with the session_token provided\n## __Headers__\n`app_token` *The app token provided by GLPI*\n\n`session_token` *The session token*\n\n```sh\ncurl -X GET \\\n-H 'Content-Type: application/json' \\\n-H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n-H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n'http://path/to/glpi/apirest.php/killSession'\n```\n---\n\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "App-Token",
+                    "value": "{{ _.app_token }}"
+                },
+                {
+                    "name": "Session-Token",
+                    "value": "{{ _.session_token }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1605194362281,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_138651ac0e204b2ab7c5efd9636c623b",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161733,
+            "created": 1615666161733,
             "url": "{{ _.baseUrl }}/Ticket",
             "name": "Get all tickets",
             "description": "## `GET` /Ticket\n Returns all tickets\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -583,22 +661,22 @@
             "_type": "request"
         },
         {
-            "_id": "fld_330f792ce150493c89ae669f9c7a6062",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1615648594583,
-            "created": 1615147023471,
+            "_id": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666161711,
+            "created": 1615666161711,
             "name": "Items/Search",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1610636355355,
+            "metaSortKey": -1000000000,
             "_type": "request_group"
         },
         {
-            "_id": "req_29d757dbe3ab4fe2ad88a5ddee12e1a1",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147023501,
-            "created": 1615147023501,
+            "_id": "req_213eb969ac774aa9b0bae2b806d79723",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161730,
+            "created": 1615666161730,
             "url": "{{ _.baseUrl }}/Ticket/5421",
             "name": "Get ticket with ID 1",
             "description": "## `GET` /Ticket/:TicketID\n Returns the ticket with the specified Id.\n\n#### Route Params\n`id` *The ticket ID*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -634,10 +712,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_9da1643359a84a099e56ea79d39466f7",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147023494,
-            "created": 1615147023494,
+            "_id": "req_ec3d82ae1dd14b73b1069530caa4cb96",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161727,
+            "created": 1615666161727,
             "url": "{{ _.baseUrl }}/Ticket/1/TicketFollowup",
             "name": "Get ticket Followup",
             "description": "## `GET` /Ticket/:TicketID/TicketFollowup\n Returns the followup of the Ticket specified\n\n#### Route Params\n`id` *The ticket ID*\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/TicketFollowup'\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -673,10 +751,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_032146f33275412ba40f9dc63a7f8821",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147023486,
-            "created": 1615147023486,
+            "_id": "req_ac6d4d18599d4209bd95ed9170a81276",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161724,
+            "created": 1615666161724,
             "url": "{{ _.baseUrl }}/Ticket/",
             "name": "Create ticket",
             "description": "## `POST` /Ticket\n Create a ticket. You must pass a `input` param with the json with the params, follow some param examples.\n\n#### Params\n`name`: *Ticket title*\n\n`content` *Ticket description*\n\n`urgency` *Ticket urgency* \n\n`impact` *Ticket impact*\n\n`type` *Ticket type (requisition or incident)*\n\n`itilcategories_id` *Ticket categories* \n\t\t\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\n`Session-Token` *The app token provided by GLPI*\n\n###### Note\n It's possible to use the search params on any items, such as tickets.\n\n```sh\ncurl --request POST \\\n  --url http://glpi.beltis.com.br/glpi/apirest.php/Ticket/ \\\n  --data '{\n\t\"input\": {\n\t\t\"name\": \"TESTE de ticket\",\n\t\t\"content\": \"Teste de criação de ticket via API\",\n\t\t\"urgency\": 5,\n\t\t\"impact\": 3,\n\t\t\"type\": 2,\n\t\t\"itilcategories_id\": 22,\n\t\t\"requesttype\": 7\n\t}\n}'\n  -H 'Content-Type: application/json' \\\n  -H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/Ticket/10/TicketFollowup' \n```\n\n#### Response\n```json\n{\n  \"id\": 5421,\n  \"message\": \"Item adicionado com sucesso: TESTE de ticket\"\n}\n```\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
@@ -721,10 +799,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_233cad9c4e4c4d6088c291fa5ef38854",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147032087,
-            "created": 1605196732599,
+            "_id": "req_18a6deb168ca4e67a5435597c98ead6b",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161715,
+            "created": 1615666161715,
             "url": "{{ baseUrl }}/search/requesttype/",
             "name": "Search",
             "description": "",
@@ -767,10 +845,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_45e0ecfd9ad24f9e984f8ef59448c7bc",
-            "parentId": "fld_330f792ce150493c89ae669f9c7a6062",
-            "modified": 1615147034556,
-            "created": 1614630915855,
+            "_id": "req_22c256121fa843d0935fe38ce1bc0643",
+            "parentId": "fld_25943c8f989c4449bf5b58b821efdb09",
+            "modified": 1615666161720,
+            "created": 1615666161720,
             "url": "{{ baseUrl }}/listSearchOptions/requesttype",
             "name": "getSearchOptions",
             "description": "",
@@ -843,88 +921,10 @@
             "_type": "request"
         },
         {
-            "_id": "req_128ea568fc944af491b36a07126c0634",
-            "parentId": "fld_2fb8d727c168496ba4269f7a7c4fb0e9",
-            "modified": 1615579361693,
-            "created": 1605194362231,
-            "url": "{{ _.baseUrl }}/initSession",
-            "name": "initSession",
-            "description": "## `GET` /initSession\n Creates a session, providing a session token to use the other endpoints\n\n#### HEADERS\n`App-Token` *The app token provided by GLPI*\n\nYou must authenticate to get a session token. You can pass a user and password parameter, or a authorization with two methods:\n\n`login` *The username to creates the session*\n\n`password` *The user password to creates the session*\n\n##### OR\n\n`Authorization: Basic base64({login}:{password})`\n\n##### OR\n\n`Authorization: user_token USER_TOKEN` \n``` sh\n#the user token is recoverable at User > Preferences > api token\n```\n\n```sh\ncurl -X GET \\\n  -H 'Content-Type: application/json' \\\n  -H \"Authorization: user_token q56hqkniwot8wntb3z1qarka5atf365taaa2uyjrn\" \\\n  -H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n  'http://path/to/glpi/apirest.php/initSession'\n```\n\n### __Response__\n The response is a JSON containing the session token.\n ```json\n{\n  \"session_token\":\"TOKEN\"\n}\n```\n\n---\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}",
-                    "id": "pair_8e2fcd59d50644b3ae0e1a293744ee14"
-                },
-                {
-                    "name": "Authorization",
-                    "value": "{{ _.authToken }}",
-                    "id": "pair_9638435883464344a4b2590b0186fb6f"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1605194362331,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": false,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "fld_2fb8d727c168496ba4269f7a7c4fb0e9",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1610636350681,
-            "created": 1610636350681,
-            "name": "Session",
-            "description": "",
-            "environment": {},
-            "environmentPropertyOrder": null,
-            "metaSortKey": -1610636350681,
-            "_type": "request_group"
-        },
-        {
-            "_id": "req_53f3c36be5734da7a2f46433fd9b3074",
-            "parentId": "fld_2fb8d727c168496ba4269f7a7c4fb0e9",
-            "modified": 1615146496592,
-            "created": 1605196679671,
-            "url": "{{ baseUrl }}/killSession",
-            "name": "killSession",
-            "description": "## `GET` /killSession\n Destroy the session with the session_token provided\n## __Headers__\n`app_token` *The app token provided by GLPI*\n\n`session_token` *The session token*\n\n```sh\ncurl -X GET \\\n-H 'Content-Type: application/json' \\\n-H \"Session-Token: 83af7e620c83a50a18d3eac2f6ed05a3ca0bea62\" \\\n-H \"App-Token: f7g3csp8mgatg5ebc5elnazakw20i9fyev1qopya7\" \\\n'http://path/to/glpi/apirest.php/killSession'\n```\n---\n\nAPI documentation: http://PATH/TO/GLPI/apirest.php",
-            "method": "GET",
-            "body": {},
-            "parameters": [],
-            "headers": [
-                {
-                    "name": "App-Token",
-                    "value": "{{ _.app_token }}"
-                },
-                {
-                    "name": "Session-Token",
-                    "value": "{{ _.session_token }}"
-                }
-            ],
-            "authentication": {},
-            "metaSortKey": -1605194362281,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "env_fba14bf501153c0bd19bc712a9c0e844807a042d",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1614632616844,
-            "created": 1605194268623,
+            "_id": "env_cc59626447d5c9a4699ab65d7d9eb8958fcebeb0",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666231562,
+            "created": 1615666092363,
             "name": "Base Environment",
             "data": {
                 "session_token": "{% response 'body', 'req_128ea568fc944af491b36a07126c0634', 'b64::JC5zZXNzaW9uX3Rva2Vu::46b', 'no-history', 60 %}",
@@ -938,60 +938,33 @@
             },
             "color": null,
             "isPrivate": false,
-            "metaSortKey": 1605194268623,
+            "metaSortKey": 1615666092363,
             "_type": "environment"
         },
         {
-            "_id": "jar_fba14bf501153c0bd19bc712a9c0e844807a042d",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1614652081498,
-            "created": 1605194268627,
+            "_id": "jar_cc59626447d5c9a4699ab65d7d9eb8958fcebeb0",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666092365,
+            "created": 1615666092365,
             "name": "Default Jar",
             "cookies": [],
             "_type": "cookie_jar"
         },
         {
-            "_id": "spc_b508aef8520946cab3a9a2d6467e984f",
-            "parentId": "wrk_bfb44bcd05f848d4b7d2cfc36e0ec17e",
-            "modified": 1605194268456,
-            "created": 1605194268456,
+            "_id": "spc_59414b773ca9485abd1edd669eb57d54",
+            "parentId": "wrk_9808a1357d9d4ef685b04cfc167966ca",
+            "modified": 1615666474229,
+            "created": 1615666092219,
             "fileName": "GLPI",
-            "contents": "",
+            "contents": "{\n\"openapi\":\"3.0.n\",\n\"servers\":{\n  \"online\":{\n  \"url\":\"https://glpi.beltis.com.br/glpi/apirest.php\",\n  }\n}\n}",
             "contentType": "yaml",
             "_type": "api_spec"
         },
         {
-            "_id": "env_a6e2ccffec7d4eedb7e0e4d69b35d7e3",
-            "parentId": "env_fba14bf501153c0bd19bc712a9c0e844807a042d",
-            "modified": 1614779188920,
-            "created": 1605194369828,
-            "name": "online",
-            "data": {
-                "baseUrl": "http://glpi.beltis.com.br/glpi/apirest.php",
-                "vivoToken": "qyG4FTZL0forCyOh7oE9CCLDWSDQ3S6liLhnviwi",
-                "timToken": "A7EVPBo1TBhxzAHHQtouqcdr4zXcXreBtmWhn2Rx",
-                "remoteToken": "PirfBOVOZOqJJ65AHDziR6Nk5p6fRlmU2OYQbWOc",
-                "app_token": "{{ _.remoteToken }}"
-            },
-            "dataPropertyOrder": {
-                "&": [
-                    "baseUrl",
-                    "vivoToken",
-                    "timToken",
-                    "remoteToken",
-                    "app_token"
-                ]
-            },
-            "color": "#1dd72a",
-            "isPrivate": false,
-            "metaSortKey": 1605194369828,
-            "_type": "environment"
-        },
-        {
-            "_id": "env_7eec9f6a73ca4c0d82617bdb390cefc4",
-            "parentId": "env_fba14bf501153c0bd19bc712a9c0e844807a042d",
-            "modified": 1614651942474,
-            "created": 1614626182771,
+            "_id": "env_a3631c25939241fc882e2fa882a13608",
+            "parentId": "env_cc59626447d5c9a4699ab65d7d9eb8958fcebeb0",
+            "modified": 1615666334485,
+            "created": 1615666241823,
             "name": "local",
             "data": {
                 "baseUrl": "http://192.168.3.28/glpi/apirest.php",
@@ -1005,14 +978,14 @@
             },
             "color": "#b128cc",
             "isPrivate": false,
-            "metaSortKey": 1614626182771,
+            "metaSortKey": 1615666241823,
             "_type": "environment"
         },
         {
-            "_id": "env_ed86758e78574538b5701ee5e1ef71f2",
-            "parentId": "env_fba14bf501153c0bd19bc712a9c0e844807a042d",
-            "modified": 1614651966436,
-            "created": 1614626188635,
+            "_id": "env_d25a92cd57de4c66aabfdc2cad92528d",
+            "parentId": "env_cc59626447d5c9a4699ab65d7d9eb8958fcebeb0",
+            "modified": 1615666358686,
+            "created": 1615666249486,
             "name": "home",
             "data": {
                 "baseUrl": "http://192.168.3.28/glpi/apirest.php",
@@ -1026,7 +999,28 @@
             },
             "color": "#3440e5",
             "isPrivate": false,
-            "metaSortKey": 1614626188635,
+            "metaSortKey": 1615666249486,
+            "_type": "environment"
+        },
+        {
+            "_id": "env_fb424fed1161480fbfca11b969cbd733",
+            "parentId": "env_cc59626447d5c9a4699ab65d7d9eb8958fcebeb0",
+            "modified": 1615666304917,
+            "created": 1615666296661,
+            "name": "online",
+            "data": {
+                "baseUrl": "http://glpi.beltis.com.br/glpi/apirest.php",
+                "app_token": "PirfBOVOZOqJJ65AHDziR6Nk5p6fRlmU2OYQbWOc"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl",
+                    "app_token"
+                ]
+            },
+            "color": "#1dd72a",
+            "isPrivate": false,
+            "metaSortKey": 1615666296661,
             "_type": "environment"
         }
     ]

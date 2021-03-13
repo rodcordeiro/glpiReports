@@ -10,16 +10,12 @@ class APP:
     """
     def __init__(self):
         self.app_token = ""
-
         self.session_token = ""
+
     def start(self):
         self.app_token = config("LOCAL_TOKEN")
         self.session_token = self.getToken()
         return self
-
-    def getPubAdd(self):
-        response = os.popen("wget -qO - ipv4.icanhazip.com").readlines()[0].split('\n')[0]
-        return response
 
     def getToken(self):
         token = sessionController(self.app_token).createSession()

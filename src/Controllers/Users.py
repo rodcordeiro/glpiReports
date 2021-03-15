@@ -17,41 +17,37 @@ class userController:
 
     def getClients(self):
         url = config("BASE_URL") + "/search/User/"
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
         querystring = {
-            "Content-Type":"application/json",
-            "app_token":self.app_token,
-            "session_token":self.session_token,
             "range":"0-100",
             "order":"ASC",
             "criteria[0][itemtype]":"User",
             "criteria[0][field]":"13",
             "criteria[0][searchtype]":"contains",
-            "criteria[0][value]":"Clientes",
+            "criteria[0][value]":config("CLIENTS_GROUP"),
             "forcedisplay[0]":["1","2"]
             }
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
-        return response.json()
+        response = requests.request("GET", url, data=payload, params=querystring, headers= headers)
+        return response.json().get("data")
         
     def getTechs(self):
         url = config("BASE_URL") + "/search/User/"
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
         querystring = {
-            "Content-Type":"application/json",
-            "app_token":self.app_token,
-            "session_token":self.session_token,
             "range":"0-100",
             "order":"ASC",
             "criteria[0][itemtype]":"User",
             "criteria[0][field]":"13",
             "criteria[0][searchtype]":"contains",
-            "criteria[0][value]":"Área técnica",
+            "criteria[0][value]":config("TECH_GROUP"),
             "forcedisplay[0]":"1",
             "forcedisplay[1]":"2",
             "forcedisplay[2]":"9",
             "forcedisplay[3]":"34"
             }
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
+        response = requests.request("GET", url, data=payload, params=querystring, headers=headers)
         data = {}
         for tech in response.json().get('data'):
             data[tech['2']]=f"{tech['9']} {tech['34']}"

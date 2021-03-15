@@ -15,37 +15,51 @@ class ticketController:
         self.app_token = app.app_token
         self.session_token = app.session_token
 
-    def getTickets(self,id=None):
+    def getAllTickets(self):
         """
-        Returns the last month tickets, if :id is provided it filters for the user.
+        Returns all tickets.
 
         Examples:
 
         .. code-block:: python
 
-            getTicketsLastMonth(13)
+            getAllTickets()
+        """
+
+        url = config("BASE_URL") + "/Ticket"
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
+        querystring = {
+            "range":"0-999999",
+            "order":"DESC"
+            }
+        payload = ""
+        response = requests.request("GET", url, data=payload, params=querystring, headers = headers)
+        return response.json()
+    
+    def getTicket(self,id):
+        """
+        Returns the ticket
+
+        Examples:
+
+        .. code-block:: python
+
+            getTicket(13)
 
         :param id: ID to be used for filtering the requester of the tickets.
         """
 
-        url = config("BASE_URL") + "/Ticket"
+        url = config("BASE_URL") + "/Ticket/{}".format(id)
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
         querystring = {
-            "Content-Type":"application/json",
-            "app_token":self.app_token,
-            "session_token":self.session_token,
-            "range":"0-99999",
+            "range":"0-999999",
             "order":"DESC"
             }
-        if id:
-            querystring["criteria[0][itemtype]"]= "Ticket"
-            querystring["criteria[0][searchtype]"]= "equals"
-            querystring["criteria[0][value]"]: id
-            querystring["criteria[0][field]"]: "7"
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
+        response = requests.request("GET", url, data=payload, params=querystring, headers = headers)
         return response.json()
         
-    def getTicketsLastMonth(self,id=None):
+    def getTicketsReport(self,id):
         """
         Returns the last month tickets, if :id is provided it filters for the user.
 
@@ -58,11 +72,9 @@ class ticketController:
         :param id: ID to be used for filtering the requester of the tickets.
         """
         url = config("BASE_URL") + "/search/Ticket/"
-        date = getMonth()
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
+        date = getThisMonth()
         querystring = {
-            "Content-Type":"application/json",
-            "app_token":self.app_token,
-            "session_token":self.session_token,
             "range":"0-99999",
             "order":"DESC",
             "criteria[0][itemtype]": "Ticket",
@@ -93,10 +105,10 @@ class ticketController:
             "forcedisplay[11]": "9"
             }
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
+        response = requests.request("GET", url, data=payload, params=querystring,headers = headers)
         return response.json().get("data")
 
-def getMonth():
+def getThisMonth():
     date = datetime.date.today()
     if date.month == 1:
         monthInit = 12 
@@ -111,3 +123,6 @@ def getMonth():
         "end":datetime.datetime.strptime(end, "%m-%d-%Y %H:%M:%S").date()
         }
     return date
+
+
+            

@@ -6,25 +6,26 @@ class sessionController:
     def __init__(self,app_token):
         self.app_token = app_token
         self.session_token = ''
+        self.createSession()
+        
     
     def createSession(self):
         url = config("BASE_URL") + "/initSession"
-        querystring = {"Content-Type":"application/json","app_token":self.app_token,"login":config("USERNAME"),"password":config("PASSWORD")}
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Authorization": "user_token {}".format(config("USER_TOKEN"))}
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
+        response = requests.get(url, data=payload, headers = headers)
         if response.status_code == 200:
             token = response.json().get("session_token")
             self.session_token = token
-            return token
         else:
-            return False
+            exit(0)
 
     
     def killSession(self):
         url = config("BASE_URL") + "/killSession"
-        querystring = {"Content-Type":"application/json","app_token":self.app_token,"session_token":self.session_token}
+        headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
         payload = ""
-        response = requests.request("GET", url, data=payload, params=querystring)
+        response = requests.get(url, data=payload, headers = headers)
         print(response)
         return response.status_code
     

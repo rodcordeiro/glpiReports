@@ -2,6 +2,7 @@ import requests
 import json
 from decouple import config
 
+from ..models.Clients import Client
 
 class user:
     '''
@@ -29,7 +30,11 @@ class user:
             }
         payload = ""
         response = requests.request("GET", url, data=payload, params=querystring, headers= headers)
-        return response.json().get("data")
+        clients = response.json().get("data")
+        data = []
+        for client in clients:
+            data.append(Client(client['2'],client['1']))
+        return data
         
     def getTechs(self):
         url = config("GLPI_BASEURL") + "/search/User/"

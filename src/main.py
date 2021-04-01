@@ -17,23 +17,14 @@ class app:
       self.zabbix = zabbix()
       self.reports = reports(self)
     
+    def close(self):
+      self.glpi.session.killSession()
+
     def teste(self):
-      host=self.zabbix.get_client_hosts("Fercab")
-      backupSuccess=''
-      backupError=''
-      agentAvailability=''
-      # for item in host['items']:
-      #   if item['name'] == "Windiws Backup Trouble":
-      #     backupSuccess = item
-      #   elif item['name'] == "Windows Backup Successful":
-      #     backupError = item
-      #   elif item['name'] == "Zabbix agent availability":
-      #     agentAvailability = item
+      host = self.zabbix.get_client_hosts("Globom")
       for h in host:
         print(h['name'])
-      # print(backupSuccess)
-      # print(backupError)
-      # print(agentAvailability)
+
 # 
 # Windiws Backup Trouble
 # Windows Backup Successful
@@ -47,4 +38,6 @@ class app:
 
 app = app()
 app.teste()
+
+app.close()
 print("finished")

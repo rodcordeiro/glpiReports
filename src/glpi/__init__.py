@@ -13,3 +13,4 @@ class GLPI:
         self.user = user(self)
         self.techs = self.user.getTechs()
         self.clients = self.user.getClients()
+        

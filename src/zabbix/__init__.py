@@ -28,9 +28,17 @@ class zabbix:
 
     def get_client_hosts(self,client):
         print(f"Client: {client}")
-        response = []
-        for host in self.hosts:
-            name = host['name'].split('|')
-            print(name[0],"-")
+        search={
+            "output":"extended",
+            "filters":{
+                "search": {
+                    "name": [f"{client}"],
+                    "host": [f"{client}"],
+                    "searchWildcardsEnabled":1
+                }
+            }
+        }
+        print(search)
+        response = self.zabbix.host.get(search)
         return response
         

@@ -25,7 +25,6 @@ class session:
         headers = {"Content-Type":"application/json","App-Token":self.app_token,"Session-Token": self.session_token}
         payload = ""
         response = requests.get(url, data=payload, headers = headers)
-        print(response)
         return response.status_code
     
     def getProfiles(self):

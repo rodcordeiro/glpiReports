@@ -1,9 +1,12 @@
+import logging
 import requests
 import json
 from decouple import config
 
 from .controllers.Session import session
 from .controllers.User import user
+
+logger = logging.getLogger(__name__)
 
 class GLPI:
     def __init__(self):
@@ -13,4 +16,4 @@ class GLPI:
         self.user = user(self)
         self.techs = self.user.getTechs()
         self.clients = self.user.getClients()
-        
+        logger.info("GLPI plugin connected")

@@ -1,3 +1,4 @@
+import logging
 import os,platform
 from decouple import config
 import json
@@ -9,26 +10,25 @@ from glpi import GLPI
 from zabbix import zabbix
 from reports import reports
 
-print("started")
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 class app:
     def __init__(self):
-      self.glpi = GLPI()
+      logger.info(f"Initializing ReportTools session")
       self.zabbix = zabbix()
+      self.glpi = GLPI()
       self.reports = reports(self)
     
     def close(self):
       self.glpi.session.killSession()
+      logger.info(f"Closing session.")
+      
 
-    def teste(self):
-      host = self.zabbix.get_client_hosts("Globom")
-      for h in host:
-        print(h['name'])
+
+    
 
 # 
-# Windiws Backup Trouble
-# Windows Backup Successful
-# Zabbix agent availability
 # 
 # 
 # 
@@ -37,7 +37,6 @@ class app:
 # 
 
 app = app()
-app.teste()
+app.reports.get_client_hosts()
 
 app.close()
-print("finished")

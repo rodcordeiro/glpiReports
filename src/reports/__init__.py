@@ -22,6 +22,13 @@ class reports:
         print(response)
         for item in response['items']:
             print(item)
+    
+    def create_report(self,ReportFile):
+        logger.info(f"Creating report on {ReportFile}")
+        f = open(ReportFile, "a")
+        f.write(str(self.glpi.clients))
+        f.close()
+
         
 
 

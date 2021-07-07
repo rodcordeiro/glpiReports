@@ -10,7 +10,7 @@ from glpi import GLPI
 from zabbix import zabbix
 from reports import reports
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("ReportTools")
 logging.basicConfig(level=logging.INFO)
 
 class app:
@@ -37,6 +37,5 @@ class app:
 # 
 
 app = app()
-app.reports.get_client_hosts()
-
+app.reports.create_report("./reports.txt")
 app.close()

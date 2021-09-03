@@ -1,5 +1,5 @@
-python-decouple>=3.1
-setuptools>=38.3
-requests>=2.25.1
-pyzabbix>=0.8.2
-pyinstaller>=4.3
+python-decouple==3.4
+setuptools==57.4.0
+requests==2.26.0
+pyzabbix==1.0.0
+pyinstaller==4.5.1

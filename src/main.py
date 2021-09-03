@@ -37,5 +37,5 @@ class app:
 # 
 
 app = app()
-app.reports.create_report("./reports.txt")
+app.reports.get_client_hosts()
 app.close()

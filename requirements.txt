@@ -1,4 +1,4 @@
-python-decouple==3.4
+python-decouple==3.8
 setuptools==65.5.1
 requests==2.26.0
 pyzabbix==1.0.0

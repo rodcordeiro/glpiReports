@@ -2,4 +2,4 @@ python-decouple==3.4
 setuptools==65.5.1
 requests==2.26.0
 pyzabbix==1.0.0
-pyinstaller==4.5.1
+pyinstaller==4.10
